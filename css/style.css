@@ -1,3 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
+
 body {
-    background-color: red;;
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    background: #f3f3f5;
+    scroll-behavior: smooth;
+}
+/* .body-fixed{
+
+    position: fixed;
+    height: 100vh;
+    top: auto; 
+    left: auto;
+} */
+
+body, html {
+    /* overflow-x: hidden; */
+}
+img {
+    max-width: 100%;
+}
+
+/* Animación navideña para los enlaces del menú de navegación */
+@keyframes christmas-blink {
+    0% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    50% {
+        color: green;
+        text-shadow: 0 0 10px green;
+    }
+    100% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+}
+
+/* Aplicar la animación navideña al hacer hover */
+.nav-link:hover,
+.navbar-brand:hover {
+    animation: christmas-blink 1s infinite;
+    transition: all 0.3s ease;
+}
+
+/* Estilo general para los enlaces del nav */
+.nav-link,
+.navbar-brand {
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 700; /* Grosor de la fuente */
+    text-transform: uppercase; /* Transformar texto a mayúsculas */
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    transition: all 0.3s ease; /* Transición suave para hover */
+}
+
+/* Hover para animación navideña */
+.nav-link:hover,
+.navbar-brand:hover {
+    animation: christmas-blink 1s infinite;
+    transition: all 0.3s ease;
+}
+
+
+/* Inicia Viewport css */
+
+.main-banner{
+    background-color: #f9f9f9;
+    position: relative
+}
+.banner-img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.uil {
+    color: #ff8243;
+    font-size: 20px;
+}
+
+/* Termina Viewport css */
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .nav-link,
+    .navbar-brand {
+        font-size: 16px; /* Reduce el tamaño en dispositivos más pequeños */
+        font-weight: 600;
+    }
+}
+
+/* Animación navideña */
+@keyframes christmas-blink {
+    0% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    50% {
+        color: green;
+        text-shadow: 0 0 10px green;
+    }
+    100% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
 }
