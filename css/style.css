@@ -70,6 +70,7 @@ img {
     background-color: #f9f9f9;
     position: relative;
     height: 100vh;
+    background-size: 100vh;
 }
 .banner-img {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
