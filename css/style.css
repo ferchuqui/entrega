@@ -1,185 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-/* font-family: 'Playfair Display', serif;
-font-family: 'Poppins', sans-serif; */
 
+/* Fuentes principales */
 body {
     font-family: 'Poppins', sans-serif;
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
     scroll-behavior: smooth;
 }
-/* .body-fixed{
 
-    position: fixed;
-    height: 100vh;
-    top: auto; 
-    left: auto;
-} */
-
-body, html {
-    /* overflow-x: hidden; */
-}
+/* Estilo general para imágenes */
 img {
     max-width: 100%;
 }
 
-/* Animación navideña para los enlaces del menú de navegación */
-@keyframes christmas-blink {
-    0% {
-        color: red;
-        text-shadow: 0 0 10px red;
-    }
-    50% {
-        color: green;
-        text-shadow: 0 0 10px green;
-    }
-    100% {
-        color: red;
-        text-shadow: 0 0 10px red;
-    }
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
-/* Aplicar la animación navideña al hacer hover */
-.nav-link:hover,
-.navbar-brand:hover {
-    animation: christmas-blink 1s infinite;
-    transition: all 0.3s ease;
-}
-
-/* Estilo general para los enlaces del nav */
 .nav-link,
 .navbar-brand {
     font-size: 18px; /* Tamaño de fuente */
     font-weight: 700; /* Grosor de la fuente */
-    text-transform: uppercase; /* Transformar texto a mayúsculas */
+    text-transform: uppercase; /* Mayúsculas */
     letter-spacing: 1.5px; /* Espaciado entre letras */
-    transition: all 0.3s ease; /* Transición suave para hover */
-}
-
-/* Hover para animación navideña */
-.nav-link:hover,
-.navbar-brand:hover {
-    animation: christmas-blink 1s infinite;
-    transition: all 0.3s ease;
-}
-
-
-/* Inicia Viewport css */
-
-.main-banner{
-    background-color: #f9f9f9;
-    position: relative;
-    height: 100vh;
-    background-size: 100vh;
-}
-.banner-img {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-h1 span {
-    color: #ff8243;
-}
-
-.uil {
-    color: #ff8243;
-    font-size: 20px;
-}
-.banner-img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    animation: biani 4.5s linear infinite alternate;
-    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
-}
-
-@keyframes biani {
-    0% {
-        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
-    }
-    25% {
-        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
-    }
-    50% {
-        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
-    }
-    100% {
-        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
-    }
-}
-/* Termina Viewport css */
-/* Brands-sec */
-content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-.brands-row{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -15px;
-}
-
-.content-row{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.brand-title .h5-title {
-    font-weight: 500;
-    letter-spacing: 2px;
-    opacity: 0.7;
-    text-transform: uppercase;
-}
-.header-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
-.content-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.h5-title {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-  }
-  .brands-row {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -15px;
-}
-.brands-box {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-}
-.brands-box:hover {
-    filter: brightness(0.3);
-    opacity: 0.9;
-}
-
-.brand-title .h5-title {
-    font-weight: 500;
-    letter-spacing: 2px;
-    opacity: 0.7;
-    text-transform: uppercase;
-}
-
-
-
-
-
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 991px) {
-    .nav-link,
-    .navbar-brand {
-        font-size: 16px; /* Reduce el tamaño en dispositivos más pequeños */
-        font-weight: 600;
-    }
+    transition: all 0.3s ease; /* Transición para efectos */
 }
 
 /* Animación navideña */
@@ -197,8 +43,166 @@ content-container {
         text-shadow: 0 0 10px red;
     }
 }
-.main-banner{
+
+/* Aplicar animación navideña */
+.nav-link:hover,
+.navbar-brand:hover {
+    animation: christmas-blink 1s infinite;
+    transition: all 0.3s ease;
+}
+
+/* Barra de búsqueda */
+form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem;
+}
+
+form .btn-outline-success {
+    border-radius: 20px;
+}
+
+/* Íconos del navbar */
+.navbar .uil {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .uil:hover {
+    color: #007bff; /* Cambia a azul al hacer hover */
+}
+
+/* Sección principal (main banner) */
+.main-banner {
     padding: 200px 0 300px;
     min-height: 100vh;
     position: relative;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+span{
+    color: #ff8243;
+}
+
+
+/* Realiza la imagen deformada */
+.banner-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+  }
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+    100% {
+        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+
+/* Tamaño base para todos los dispositivos */
+.navbar .nav-link,
+.navbar-brand {
+    font-size: 0.75rem; /* 16px por defecto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .nav-link,
+    .navbar-brand {
+        font-size: 16px; /* Reduce el tamaño en dispositivos más pequeños */
+        font-weight: 600;
+    }
+}
+/* Tamaño para pantallas XL (1200px a 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .navbar .nav-link,
+    .navbar-brand {
+        font-size: 1.25rem; /* Mantiene el tamaño en XL */
+    }
+}
+
+/* Tamaño para pantallas XXL (1400px y mayores) */
+@media (min-width: 1400px) {
+    .navbar .nav-link,
+    .navbar-brand {
+        font-size: 1.5rem; /* Aumenta a 1.25rem en XXL (20px) */
+    }
 }
