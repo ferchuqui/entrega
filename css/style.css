@@ -29,6 +29,10 @@ img {
     transition: all 0.3s ease; /* Transición para efectos */
 }
 
+i{
+    color: #ff8243 !important
+}
+
 /* Animación navideña */
 @keyframes christmas-blink {
     0% {
@@ -178,14 +182,26 @@ h1{
     opacity: 0.7;
     text-transform: uppercase;
 }
-         
-
-
-
                  /* Termina Brand */
 
 
+/* Boton Navideño */
 
+#santaButton {
+    background: linear-gradient(45deg, #ff0000, #ff6347); /* Rojo brillante */
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#santaButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Termina Boton Navideño */
 
 
 

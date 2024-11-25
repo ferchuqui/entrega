@@ -20,3 +20,28 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ajustar al cargar la página
     adjustMainMargin();
 });
+
+
+
+/* Festejo de navidad */
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const santaButton = document.getElementById('santaButton');
+        const christmasMusic = document.getElementById('christmasMusic');
+        let isPlaying = false;
+
+        santaButton.addEventListener('click', function () {
+            if (!isPlaying) {
+                christmasMusic.play(); // Reproduce la música
+                santaButton.innerHTML = '<i class="bi bi-music-note-beamed"></i> 🎅 Detener Música';
+                isPlaying = true;
+            } else {
+                christmasMusic.pause(); // Pausa la música
+                santaButton.innerHTML = '<i class="bi bi-snow2"></i> 🎅 Música Navideña';
+                isPlaying = false;
+            }
+        });
+    });
+
