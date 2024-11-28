@@ -462,27 +462,7 @@ h1{
 }
 /* Termina Our Section */
 
-/* Inicia Efecto nieve */
 
-.snowflake {
-    position: fixed;
-    top: -10px;
-    font-size: 1rem;
-    color: white;
-    animation: fall linear infinite;
-    z-index: 9999;
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(0) rotate(0deg);
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-    }
-}
-
-/* Termina Efecto nieve */
 
 
 
