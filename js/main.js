@@ -191,6 +191,7 @@ jQuery(window).on('load',function () {
         santaButton.addEventListener('click', function () {
             if (!isPlaying) {
                 christmasMusic.play(); // Reproduce la música
+                 console.log("que linda musica")
                 santaButton.innerHTML = '<i class="bi bi-music-note-beamed"></i> 🎅 Detener Música';
                 isPlaying = true;
             } else {
