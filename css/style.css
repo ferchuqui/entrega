@@ -361,10 +361,15 @@ h1{
     padding: 0 30px 40px;
     padding-top: 0;
     margin: 130px 0 30px;
-    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02)
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
+.dish-box:hover{
+    transform: scale(1.1);
+}
+
 .dist-img {
-    margin-top: -13px;
+    margin-top: -130px;
+    /* El margen superior de la card flota */
     margin-bottom: 30px;
 }
 .dist-img img {
@@ -425,6 +430,9 @@ h1{
     text-transform: capitalize;
     margin-bottom: 2px;
     font-weight: 300;
+}
+.dish-info ul li b{
+    font-weight: 600;
 }
 .dish-info, .dist-bottom-row{
     padding: 0 30px;
