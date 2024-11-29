@@ -528,7 +528,36 @@ h1{
 /* Termina Boton Sugerencia */
 
 
+/* Inicia Boton Whatsapp */
 
+/* Botón de WhatsApp */
+#whatsappButton {
+    position: fixed;
+    bottom: 270px; /* Distancia desde el borde inferior */
+    right: 80px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    background-color: #25d366; /* Color de fondo verde WhatsApp */
+    border-radius: 50%; /* Hace el botón circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#whatsappButton img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#whatsappButton:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
+
+/* Termina Boton Whatsapp */
 
 
 
@@ -579,6 +608,10 @@ h1{
     }
 
     .floating-arrow {
+        display: none !important;
+    }
+
+    #whatsappButton {
         display: none !important;
     }
 
