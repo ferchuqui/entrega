@@ -197,7 +197,8 @@ document.addEventListener("DOMContentLoaded", function () {
         snowflake.style.left = Math.random() * 100 + 'vw'; // Posición horizontal aleatoria
         snowflake.style.animationDuration = Math.random() * 2 + 1.5 + 's'; // Velocidad aleatoria (más rápido)
         snowflake.style.opacity = Math.random(); // Transparencia aleatoria
-        snowflake.style.fontSize = Math.random() * 20 + 10 + 'px'; // Tamaño aleatorio más grande
+        snowflake.style.fontSize = Math.random() * 30 + 10 + 'px'; // Tamaño aleatorio más grande
+        snowflake.style.color = "red"
 
         snowflake.textContent = '❄'; // Copo de nieve
         main.appendChild(snowflake);
@@ -231,6 +232,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /* Termina Efecto Nieve */
+
+/* Inicia Boton rojo */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const suggestionArrow = document.getElementById('suggestionArrow');
+    const santaButton = document.getElementById('santaButton');
+
+    // Ocultar el botón de sugerencia después de presionar el botón de música
+    santaButton.addEventListener('click', function () {
+        suggestionArrow.style.display = 'none'; // Oculta la flecha
+    });
+
+    // Mostrar el botón de sugerencia después de unos segundos si no se presiona
+    setTimeout(() => {
+        if (!santaButton.classList.contains('clicked')) {
+            suggestionArrow.style.display = 'block';
+        }
+    }, 5000); // Muestra la flecha después de 5 segundos
+});
+
+
+/* Termina Boton Rojo */
 
 /* Festejo de navidad */
 
