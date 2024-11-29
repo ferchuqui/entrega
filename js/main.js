@@ -179,6 +179,59 @@ jQuery(window).on('load',function () {
     }
 });
 
+
+/* Inicia Efecto Nieve */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const santaButton = document.getElementById('santaButton');
+    const christmasMusic = document.getElementById('christmasMusic');
+    const main = document.querySelector('main');
+    let isPlaying = false;
+    let snowInterval;
+
+    function createSnowflake() {
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+
+        // Posición inicial
+        snowflake.style.left = Math.random() * 100 + 'vw'; // Posición horizontal aleatoria
+        snowflake.style.animationDuration = Math.random() * 2 + 1.5 + 's'; // Velocidad aleatoria (más rápido)
+        snowflake.style.opacity = Math.random(); // Transparencia aleatoria
+        snowflake.style.fontSize = Math.random() * 20 + 10 + 'px'; // Tamaño aleatorio más grande
+
+        snowflake.textContent = '❄'; // Copo de nieve
+        main.appendChild(snowflake);
+
+        // Remover el copo después de caer
+        setTimeout(() => {
+            snowflake.remove();
+        }, 3000); // Ajusta al mismo tiempo de duración de la animación
+    }
+
+    santaButton.addEventListener('click', function () {
+        if (!isPlaying) {
+            christmasMusic.play(); // Reproduce la música
+            santaButton.innerHTML = '<i class="bi bi-music-note-beamed"></i> 🎅 Detener Música';
+            isPlaying = true;
+
+            // Iniciar el efecto de nieve con mayor frecuencia
+            snowInterval = setInterval(createSnowflake, 100); // Se crean más copos al reducir el intervalo
+        } else {
+            christmasMusic.pause(); // Pausa la música
+            santaButton.innerHTML = '<i class="bi bi-snow2"></i> 🎅 Música Navideña';
+            isPlaying = false;
+
+            // Detener el efecto de nieve
+            clearInterval(snowInterval);
+        }
+    });
+});
+
+
+
+
+/* Termina Efecto Nieve */
+
 /* Festejo de navidad */
 
 

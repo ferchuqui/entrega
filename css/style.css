@@ -470,7 +470,28 @@ h1{
 }
 /* Termina Our Section */
 
+/* Inicia Efecto nieve */
 
+.snowflake {
+    position: absolute;
+    top: 0;
+    color: white;
+    pointer-events: none;
+    animation: fall linear;
+    z-index: 10; /* Asegura que se muestre sobre el contenido */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* Termina Efecto nieve  */
 
 
 
