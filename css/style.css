@@ -137,6 +137,7 @@ h1{
 .navbar .nav-link,
 .navbar-brand {
     font-size: 0.75rem; /* 16px por defecto */
+    padding-right: 200px;
 }
 
 
@@ -536,9 +537,9 @@ h1{
     bottom: 270px; /* Distancia desde el borde inferior */
     right: 80px; /* Distancia desde el borde derecho */
     z-index: 1000; /* Asegura que esté sobre otros elementos */
-    background-color: #25d366; /* Color de fondo verde WhatsApp */
+    background-color:transparent; /* Color de fondo verde WhatsApp */
     border-radius: 50%; /* Hace el botón circular */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    
     padding: 1px;
     display: flex;
     align-items: center;
@@ -553,7 +554,7 @@ h1{
 
 #whatsappButton:hover {
     transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+    
 }
 
 
@@ -628,6 +629,6 @@ h1{
 @media (min-width: 1400px) {
     .navbar .nav-link,
     .navbar-brand {
-        font-size: 1.5rem; /* Aumenta a 1.25rem en XXL (20px) */
+        font-size: 1.3rem; /* Aumenta a 1.25rem en XXL (20px) */
     }
 }
