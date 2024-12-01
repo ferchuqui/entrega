@@ -12,6 +12,7 @@ body {
 /* Estilo general para imágenes */
 img {
     max-width: 100%;
+}
 /* Navbar */
 .navbar {
     background-color: #f8f9fa; /* Fondo claro */
