@@ -9,7 +9,8 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Estilo general para imágenes */
+/* Estilo general para imágenes */
+
 /* Navbar */
 .navbar {
     background-color: #f8f9fa; /* Fondo claro */
@@ -309,7 +310,7 @@ h1{
 /* Inicia Our Section */
 
 .repeat-img {
-    background-sizee: contain;
+    background-size: contain;
     background-repeat: repeat;
 }
 .menu-tab-wp {
