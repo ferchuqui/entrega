@@ -9,10 +9,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Estilo general para imágenes */
-img {
-    max-width: 100%;
-}
+/* Estilo general para imágenes */
 /* Navbar */
 .navbar {
     background-color: #f8f9fa; /* Fondo claro */
